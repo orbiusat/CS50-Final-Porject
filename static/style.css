@@ -5,33 +5,50 @@ body {
 /*Primary header*/
 
 .logo img {
-    width: 150px;
-    height: 50px;
+    width: 180px;
+    height: 70px;
+    margin-left: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
 }
 .primary-header {
-    display: flex;
     align-items:center;
     justify-content: left;
     background-color: beige;
-    flex-wrap: wrap;
-    border: 1px solid black;
+    height: 70px;
 }
 
 .primary-navigation {
-    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
-    background-color: blue;
     flex-grow: 1;
+    height: 100%;
+    --gap: 0;
+}
+
+.navbar-item {
+    display: flex;
+    align-self: center;
+    height: 100% ;
+    align-items: center;
 }
 
 .primary-navigation a {
     text-decoration: none;
+    color:darkolivegreen;
+    font-size:larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    padding: 12px;
+}
+
+.navbar-item:hover {
+    border-bottom: 2px solid darkolivegreen;
 }
 
 .navbar-item-right {
-    background-color: red;
     margin-left: auto;
 }
