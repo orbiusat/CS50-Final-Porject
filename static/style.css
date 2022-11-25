@@ -7,7 +7,7 @@ body {
 .logo img {
     width: 180px;
     height: 70px;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 .flex {
@@ -18,16 +18,32 @@ body {
     align-items:center;
     justify-content: left;
     background-color: beige;
-    height: 70px;
+    height: 80px;
 }
 
 .primary-navigation {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
     flex-grow: 1;
     height: 100%;
     --gap: 0;
+}
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+
+        flex-direction: column;
+        background: steelblue;
+    }
+    .navbar-item-right {
+        margin-left: none;
+    }
+    .navbar-item {
+        display: block;
+    }
 }
 
 .navbar-item {
@@ -41,7 +57,8 @@ body {
     text-decoration: none;
     color:darkolivegreen;
     font-size:larger;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
     padding: 12px;
 }
 
