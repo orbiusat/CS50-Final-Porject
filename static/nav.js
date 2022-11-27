@@ -1,3 +1,5 @@
+// Toggle menu for mobile view
+
 const primaryNav = document.querySelector('.primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
@@ -13,3 +15,4 @@ navToggle.addEventListener('click', () => {
         navToggle.setAttribute('aria-expended', false);
     }
 });
+

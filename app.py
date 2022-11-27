@@ -20,3 +20,14 @@ Session(app)
 def index():
     return render_template("index.html")
 
+@app.route("/index.html")
+def index1():
+    return render_template("index.html")
+
+@app.route("/about.html")
+def about():
+   return render_template("about.html")
+
+@app.route("/ingredients.html")
+def ingredients():
+    return render_template("ingredients.html")

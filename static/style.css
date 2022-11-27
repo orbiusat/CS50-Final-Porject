@@ -101,7 +101,7 @@ body {
         align-items: center;
     }
 
-    .navbar-item:hover {
+    .active, .navbar-item:hover {
         border-bottom: 2px solid darkolivegreen;
     }
 
